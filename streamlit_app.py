@@ -1,3 +1,3 @@
 import streamlit
 
-import.streamlit('My Parents' Healthy Diner')
+import.streamlit('My Parents Healthy Diner')
