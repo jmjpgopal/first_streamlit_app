@@ -32,12 +32,12 @@ try:
   #streamlit.write('The user entered', fruit_choice)
 
   #import requests
-  fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
+    fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
   #streamlit.text(fruityvice_response.json())
   #Normalize the json response
-  fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+    fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
   #Output in tabluar format
-  streamlit.dataframe(fruityvice_normalized)
+    streamlit.dataframe(fruityvice_normalized)
 except URLError as e:
   streamlit.error()
 
